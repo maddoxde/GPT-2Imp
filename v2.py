@@ -18,9 +18,7 @@ dropout = 0.2
 
 torch.manual_seed(1337)
 
-# We always start with a dataset to train on. Let's download the tiny shakespeare dataset
-# wget https://raw.githubusercontent.com/karpathy/char-rnn/master/data/tinyshakespeare/input.txt
-with open('/Users/maddoxdebretteville/Downloads/input.txt', 'r', encoding='utf-8') as f:
+with open('input.txt', 'r', encoding='utf-8') as f:
     text = f.read()
 
 # here are all the unique characters that occur in this text
